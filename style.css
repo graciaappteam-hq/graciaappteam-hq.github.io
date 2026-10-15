@@ -97,6 +97,6 @@ footer.site a { color: var(--mid); margin-right: 18px; }
   .orb { width: min(80%, 300px); }
 }
 
-.email { font-weight: 600; color: var(--ink); user-select: all; -webkit-user-select: all; word-break: break-all; }
+.email { font-weight: 600; color: var(--ink); user-select: all; -webkit-user-select: all; white-space: nowrap; }
 html { scroll-behavior: smooth; }
 #contact { scroll-margin-top: 16px; }
