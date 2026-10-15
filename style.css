@@ -96,3 +96,7 @@ footer.site a { color: var(--mid); margin-right: 18px; }
   nav.site a { margin-left: 0; margin-right: 16px; }
   .orb { width: min(80%, 300px); }
 }
+
+.email { font-weight: 600; color: var(--ink); user-select: all; -webkit-user-select: all; word-break: break-all; }
+html { scroll-behavior: smooth; }
+#contact { scroll-margin-top: 16px; }
