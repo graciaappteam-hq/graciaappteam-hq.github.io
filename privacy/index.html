@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Gracia</title>
+<meta name="description" content="What Gracia stores, what leaves your phone, and who processes it.">
+<meta name="theme-color" content="#faf6ef">
+<meta property="og:title" content="Privacy policy · Gracia"><meta property="og:description" content="What Gracia stores, what leaves your phone, and who processes it."><meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="36" height="36"><span>Gracia</span></a>
+  <nav class="site" aria-label="Main"><a href="/#what">What it does</a><a href="/partners">For partners</a><a href="/privacy">Privacy</a><a href="mailto:graciaapp.team@gmail.com">Contact</a></nav>
+</div></header>
+
+<main class="prose"><div class="wrap narrow">
+<h1>Privacy policy</h1>
+<p class="meta">Last updated October 2026</p>
+
+<h2>The short version</h2>
+<p>Your data lives on your device. When you talk to Gracia, your message and a short snapshot of your life are sent through our server to an AI provider to write a reply; we don't keep them. Your journal, including anything you say during the journaling part of the evening call, never leaves your phone. Backups are encrypted with a key that never leaves your device.</p>
+
+<h2>Data we store</h2>
+<p><strong>On our servers: very little.</strong> No habits, goals, schedule, journal, conversations, finance or contacts are stored on our servers. All of that lives in a local database on your device. What our servers do keep:</p>
+<ul>
+<li>Your sign-in account (email) with Supabase, our authentication provider. No user content is stored there.</li>
+<li><strong>Anonymous usage counts</strong> to run and fund the service: a one-way hash of your account id (the raw id is not stored), plus counts such as how many messages you sent and how many AI tokens were used per month, and counters like "onboarding completed". It cannot contain message text. The app can show you your own usage for the month, and only you can see it.</li>
+<li><strong>Accountability relay data</strong>, only if you add an accountability partner: an encrypted blob we cannot read.</li>
+<li><strong>Automatic WhatsApp alert records</strong>, only if you add an accountability partner with alert thresholds, automatic alerts are switched on, and the partner has opted in. This is a small temporary record holding the partner's phone number and first name, your first name, the habit title, a day count and the time to send. It is deleted when the alert is sent, when it is replaced (you logged the habit again, removed the partner, or deleted the habit) or when it goes stale. After sending, only a bare "already sent" marker with no names, number or habit is kept for up to 60 days so the same alert is not sent twice. It never contains your notes, your habit history or the encrypted share key.</li>
+</ul>
+
+<h2>Data that passes through our servers</h2>
+<p>When you chat with Gracia (in the Gracia tab, the quick-chat button, active sessions, the evening review call, onboarding or reviews), the app sends your message and a short snapshot of context to our server, which forwards it to <strong>Anthropic PBC</strong>, our AI provider, to generate a reply. We do not store it. Anthropic processes it under its own terms and retention policy.</p>
+<p>The snapshot can include: your name, age, location, living situation and family details, faith background and how you'd like faith language handled, how you'd like Gracia to talk to you (gentle or direct), today's habits and streaks, short notes you gave about why a habit slipped, your goals, schedule and identity statements, things you're working to stop or cut back on (as habit names), the names of a few connections due a catch-up, your savings, giving and runway percentages (never raw amounts), and short "memories" Gracia keeps about you. Each message is also checked by a separate automated safety classifier (also Anthropic) so Gracia can respond to signs of crisis.</p>
+<p><strong>Never included:</strong> journal entries (including everything spoken during evening-call journaling and the Examen), examination content, raw finance amounts, and connection phone numbers and notes.</p>
+
+<h2>Sensitive information</h2>
+<p>Some of what you may share reveals religious belief, personal struggles (for example a habit you want to stop), health-related habits, or family circumstances. You choose what to tell Gracia, and every sensitive question can be skipped. Anything you tell her in conversation passes through our server and Anthropic as described above.</p>
+
+<h2>Voice</h2>
+<p>Speech is transcribed on your device where possible. If your phone can't do that, Apple's own speech service may process the audio under Apple's terms (the app tells you the first time). Your voice is never recorded or kept by Gracia, and audio never goes to our servers. Gracia's spoken replies are generated on your device.</p>
+
+<h2>Account</h2>
+<p>We use Supabase for authentication (email and password). No user content is stored in Supabase.</p>
+
+<h2>Backups</h2>
+<p>Backups are encrypted on your device with AES-256 before leaving it. The encryption key is stored only in your device's secure storage. If you enable Google Drive backup, Google stores only ciphertext. If you lose your device and your key, we cannot recover your data. A backup can be restored when you set up Gracia on a new phone.</p>
+
+<h2>Accountability sharing</h2>
+<p>If you add an accountability partner, encrypted statistics (your name, the habit titles you choose to share, and done, failed or missed marks) are relayed through our server. We store only ciphertext; the decryption key is in the share link and never reaches our server. The partner sees no notes, hours or journal. Messages you send partners via WhatsApp contain the habit name in plain text, and you compose and send these yourself. If automatic alerts are switched on, Gracia can also send a short alert to a partner who has agreed to receive them. Partners opt in by messaging Gracia's WhatsApp number and can reply STOP at any time. See <a href="/partners">information for accountability partners</a>. You can remove a partner at any time, which deletes the relayed data. If you catch up on yesterday's review, habits you log for yesterday update the marks your partner sees for that day.</p>
+
+<h2>Notifications</h2>
+<p>All reminders, including habit reminders, "coming up" block reminders, the evening call and journaling call, and monthly finance and weekly review nudges, are scheduled locally on your device. We do not send push notifications from a server.</p>
+
+<h2>Services we use</h2>
+<div class="tablewrap"><table>
+<tr><th>Service</th><th>Used for</th><th>What it sees</th></tr>
+<tr><td>Anthropic</td><td>AI replies and safety check</td><td>The message and context snapshot above, while generating a reply</td></tr>
+<tr><td>Supabase</td><td>Sign-in</td><td>Email and account id</td></tr>
+<tr><td>Railway</td><td>Hosting our server and the encrypted accountability relay</td><td>Requests in transit; stores only the relay ciphertext, the temporary alert records described above, and anonymous usage counts</td></tr>
+<tr><td>Meta (WhatsApp Business Platform)</td><td>Only if automatic alerts are on: delivering alert messages to partners who opted in</td><td>The partner's phone number and the alert text (their name, your first name, the habit title, the day count)</td></tr>
+<tr><td>Apple</td><td>App distribution; the speech service only if on-device speech isn't available</td><td>Per Apple's policies</td></tr>
+<tr><td>Google</td><td>Only if you enable Drive backup or calendar import</td><td>The encrypted backup file; calendar events you choose to import</td></tr>
+</table></div>
+
+<h2>Analytics</h2>
+<p>We do not use third-party analytics and do not track what you do in the app. The only product measurement is the anonymous usage counts above. Our server keeps minimal operational logs with no message content, including access counts for accountability share pages (no personal identity; share pages contain only encrypted data we cannot read).</p>
+
+<h2>Your rights</h2>
+<p>Delete the app to delete your data on your device. Export your data any time from Settings, Backup. To remove your sign-in account, or to ask a question or make a request about the small amount we hold on our servers (your account, hashed usage counts, relay data), email <a href="mailto:graciaapp.team@gmail.com">graciaapp.team@gmail.com</a>.</p>
+
+<h2>Children</h2>
+<p>Gracia is not directed at children under 13.</p>
+
+<h2>Changes and contact</h2>
+<p>If we change this policy in a way that matters, we will tell you in the app. Questions: <a href="mailto:graciaapp.team@gmail.com">graciaapp.team@gmail.com</a>.</p>
+</div></main>
+
+<footer class="site"><div class="wrap">
+  <div><a href="/privacy">Privacy policy</a><a href="/terms">Terms of service</a><a href="/partners">For accountability partners</a></div>
+  <div>© 2026 Gracia · <a href="mailto:graciaapp.team@gmail.com">graciaapp.team@gmail.com</a></div>
+</div></footer>
+</body>
+</html>
