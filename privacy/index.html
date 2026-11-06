@@ -21,10 +21,10 @@
 
 <main class="prose"><div class="wrap narrow">
 <h1>Privacy policy</h1>
-<p class="meta">Last updated October 2026</p>
+<p class="meta">Last updated November 2026</p>
 
 <h2>The short version</h2>
-<p>Your data lives on your device. When you talk to Gracia, your message and a short snapshot of your life are sent through our server to an AI provider to write a reply; we don't keep them. Your journal stays on your phone. Only if you switch it on in Health, short excerpts of your last few Gratitude, Reflection and Tomorrow entries go into your chat with Gracia; the Examen never does. Backups are encrypted with a key that never leaves your device.</p>
+<p>Your data lives on your device. When you talk to Gracia, your message and a short snapshot of your life are sent through our server to an AI provider to write a reply; we don't keep them. Your journal stays on your phone. Only if you switch it on in Health, short excerpts of your last few Gratitude, Reflection and Tomorrow entries go into your chat with Gracia; the Examen never does. Backups are encrypted on your phone; only your Gracia password can open them on another phone.</p>
 
 <h2>Data we store</h2>
 <p><strong>On our servers: very little.</strong> No habits, goals, schedule, journal, conversations, finance or contacts are stored on our servers. All of that lives in a local database on your device. What our servers do keep:</p>
@@ -64,7 +64,7 @@
 <p>We use Supabase for authentication (email and password). No user content is stored in Supabase.</p>
 
 <h2>Backups</h2>
-<p>Backups are encrypted on your device with AES-256 before leaving it. The encryption key is stored only in your device's secure storage. If you enable Google Drive backup, Google stores only ciphertext. If you lose your device and your key, we cannot recover your data. A backup can be restored when you set up Gracia on a new phone.</p>
+<p>Backups are encrypted on your device with AES-256 before leaving it. The backup key is kept in your device's secure storage and also travels inside each backup, locked with a key made from your Gracia password, so you can restore on a new phone by signing in. The app never stores your password itself, and we never receive the backup key or your backups. If you enable Google Drive backup, Google stores only ciphertext. Anyone who has both a backup file and your password could open it, so choose a strong password. If you reset your password, backups made before the reset open with the old password. Backups made before this protection was set up open only on the phone that made them.</p>
 
 <h2>Accountability sharing</h2>
 <p>If you add an accountability partner, encrypted statistics (your name, the habit titles you choose to share, and done, failed or missed marks) are relayed through our server. We store only ciphertext; the decryption key is in the share link and never reaches our server. The partner sees no notes, hours or journal. Messages you send partners via WhatsApp contain the habit name in plain text, and you compose and send these yourself. If automatic alerts are switched on, Gracia can also send a short alert to a partner who has agreed to receive them. Partners opt in by messaging Gracia's WhatsApp number and can reply STOP at any time. See <a href="/partners">information for accountability partners</a>. You can remove a partner at any time, which deletes the relayed data. If you catch up on yesterday's review, habits you log for yesterday update the marks your partner sees for that day.</p>
